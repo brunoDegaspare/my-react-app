@@ -2,12 +2,14 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
+import Header from "../components/header"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="My First React app" keywords={[`design`, `application`, `react`]} />
+    <Header />
     <div className="hero">
       <div className="hero__group">
         <h1 className="hero__heading">Learn how to design and code React apps.</h1>
