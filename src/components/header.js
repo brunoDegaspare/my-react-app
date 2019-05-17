@@ -12,7 +12,7 @@ const Header = ({ siteTitle }) => (
         <Link to="/courses" className="header__link">Courses</Link>
         <Link to="/downloads" className="header__link">Downloads</Link>
         <Link to="/workshops" className="header__link">Workshops</Link>
-        <Link to="/buy"><button>Buy</button></Link>
+        <Link to="/buy"><button className="header__cta">Buy</button></Link>
       </div>
     </div>
 
