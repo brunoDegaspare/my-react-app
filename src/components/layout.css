@@ -34,6 +34,7 @@ a {
   color: #ffffff;
   font-size: 60px;
   line-height: 70px;
+  animation-delay: 0.85s;
 }
 
 .hero__paragraph {
@@ -43,14 +44,29 @@ a {
 }
 
 .hero__cta {
-  font-size: 16px;
+  font-size: 14px;
   color: #ffffff;
   text-transform: uppercase;
   background: rgba(0,0,0, 0.7);
   padding: 16px 24px;
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 24px;
+  transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
+
+.hero__cta:hover {
+  background: #ffffff;
+  color: #222222;
+}
+
+
+.hero__heading,
+.hero__paragraph,
+.hero__cta {
+  opacity: 0;
+  animation: heroAnimation 2s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
 
 
 
@@ -66,5 +82,17 @@ a {
 
   .hero__paragraph {
     font-size: 24px;
+  }
+}
+
+@keyframes heroAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
