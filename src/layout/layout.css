@@ -20,6 +20,7 @@ a {
   height: 920px;
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 
 .hero__group {
@@ -59,7 +60,6 @@ a {
   color: #222222;
 }
 
-
 .hero__heading,
 .hero__paragraph,
 .hero__cta {
@@ -67,6 +67,19 @@ a {
   animation: heroAnimation 2s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
+.hero__waves {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.hero__logos {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-items: center;
+  grid-gap: 40px;
+  margin: 100px 0;
+}
 
 
 
@@ -83,6 +96,11 @@ a {
   .hero__paragraph {
     font-size: 24px;
   }
+
+  .hero__logos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
 }
 
 @keyframes heroAnimation {
